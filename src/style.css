@@ -1,0 +1,87 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+
+:root{
+    font-size: 18px;
+    --fontstack: system-ui, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+    --boldRed: #dc2626;
+    --darkRed: #b91c1c;
+}
+
+@font-face{
+    font-family: 'Roboter';
+    src: url(fonts/Roboto-Regular.ttf) format(truetype),
+        url(fonts/Roboto-Bold.ttf) format(truetype),
+        url(fonts/Roboto-Light.ttf) format(truetype),
+        url(fonts/Roboto-Italic.ttf) format(truetype);
+    font-weight: normal;
+    font-style: normal;
+}
+
+body{
+    height: 100vh;
+    font-family: 'Roboter' ,var(--fontstack);
+    display: flex;
+    flex-direction: column;
+}
+
+header{
+    height: 95px;
+    background-color: var(--boldRed);
+    display: grid;
+    grid-template-columns: 1fr repeat(3, 1fr) 6fr;
+    grid-auto-flow: column;
+    align-items: center;
+    flex: 0 0 auto;
+}
+
+.header{
+    color: white;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.title{
+    font-size: 3.3rem;
+    font-weight: 800;
+    font-style: italic;
+    margin-right: 5px;
+}
+
+.icon {
+    width: 75px;
+    height: 75px;
+}
+
+.navBttn {
+    height: 90%;
+    font-size: 1.3rem;
+    background-color: var(--boldRed);
+    border: none;
+    border-left: 1px solid white;
+}
+
+.navBttn:hover {
+    background-color: var(--darkRed);
+}
