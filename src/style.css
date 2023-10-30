@@ -43,9 +43,12 @@ body{
     flex-direction: column;
 }
 
+/* header styling */
+
 header{
     height: 95px;
     background-color: var(--boldRed);
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.4);
     display: grid;
     grid-template-columns: 1fr repeat(3, 1fr) 6fr;
     grid-auto-flow: column;
@@ -53,7 +56,8 @@ header{
     flex: 0 0 auto;
 }
 
-.header{
+.header,
+.home{
     color: white;
 }
 
@@ -62,7 +66,7 @@ header{
     align-items: center;
 }
 
-.title{
+.name{
     font-size: 3.3rem;
     font-weight: 800;
     font-style: italic;
@@ -84,4 +88,57 @@ header{
 
 .navBttn:hover {
     background-color: var(--darkRed);
+}
+
+/* home page styling */
+
+.home-container {
+    flex: 1 0 auto;
+}
+
+.content {
+    height: 960px;
+    width: 640px;
+    background-image: url(./images/noodleBckgrnd.jpg);
+    background-size: cover;
+    margin: 50px auto 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.main.text,
+.announcement {
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.35);
+    padding: 10px 0px;
+}
+
+.title,
+.message,
+.ann-mssg {
+    width: 90%;
+    text-align: center;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.title {
+    font-size: 2.7rem;
+    font-weight: 700;
+    margin-bottom: 30px;
+}
+
+.message {
+    font-size: 1.4rem;
+    line-height: 1.5;
+    margin-bottom: 10px;
+}
+
+.ann-mssg {
+    font-size: 3rem;
+    font-style: italic;
+    border: 2px dashed white;
+    border-radius: 15px;
 }
