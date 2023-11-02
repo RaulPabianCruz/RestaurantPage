@@ -2,17 +2,17 @@ const makeHomePage = function() {
     const homeContainer = document.createElement('div');
     homeContainer.classList.add('home-container');
     
-    const contentContainer = makeMainContent();
+    const contentContainer = makeHomeContent();
     homeContainer.appendChild(contentContainer);
 
     return homeContainer;
 };
 
-const makeMainContent = function() {
+const makeHomeContent = function() {
     const contentContainer = document.createElement('div');
-    contentContainer.classList.add('content');
+    contentContainer.classList.add('home-content');
 
-    const mainText = makeMainText();
+    const mainText = makeHomeText();
     const annoucement = makeAnnouncement();
 
     contentContainer.appendChild(mainText);
@@ -21,10 +21,9 @@ const makeMainContent = function() {
     return contentContainer;
 };
 
-const makeMainText = function() {
+const makeHomeText = function() {
     const mainText = document.createElement('div');
-    mainText.classList.add('main');
-    mainText.classList.add('text');
+    mainText.classList.add('home-text');
     
     const title = makeTitle();
     const message = makeMessage();
