@@ -41,6 +41,7 @@ const makeHomeBttn = function() {
     homeBttn.textContent = 'Home';
     homeBttn.classList.add('header');
     homeBttn.classList.add('navBttn');
+    homeBttn.id = 'home-bttn';
     return homeBttn;
 };
 
@@ -49,6 +50,7 @@ const makeMenuBttn = function() {
     menuBttn.textContent = 'Menu';
     menuBttn.classList.add('header');
     menuBttn.classList.add('navBttn');
+    menuBttn.id = 'menu-bttn';
     return menuBttn;
 };
 
@@ -57,6 +59,7 @@ const makeContactBttn = function() {
     contactBttn.textContent = 'Contact';
     contactBttn.classList.add('header');
     contactBttn.classList.add('navBttn');
+    contactBttn.id = 'contact-bttn';
     return contactBttn;
 };
 
