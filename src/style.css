@@ -99,6 +99,8 @@ header{
 
 .home-container {
     flex: 1 0 auto;
+    margin-top: 50px;
+    padding-bottom: 50px;
 }
 
 .home-content {
@@ -106,7 +108,7 @@ header{
     width: 640px;
     background-image: url(./images/noodleBckgrnd.jpg);
     background-size: cover;
-    margin: 50px auto 0 auto;
+    margin: 0 auto 0 auto;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -153,6 +155,7 @@ header{
 .contact-container {
     width: 70%;
     margin-top: 50px;
+    padding-bottom: 50px;
     display: grid;
     grid-template-columns: 2fr 1fr;
     grid-template-rows: 1fr 1fr;
@@ -199,4 +202,60 @@ header{
 .container > div,
 .container > li {
     margin-left: 10px;
+}
+
+/* menu page styling */
+
+.menu-page-container {
+    margin-top: 50px;
+    padding-bottom: 50px;
+    flex: 1 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.menu-title {
+    background-color: var(--boldRed);
+    color: white;
+    font-size: 2.8rem;
+    font-weight: bold;
+    font-style: italic;
+    margin-bottom: 35px;
+    padding: 0px 10px;
+    flex: 1 0 auto;
+}
+
+.menu-items-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    grid-gap: 45px;
+    flex: 1 0 auto;
+}
+
+.menu-title,
+.menu-item {
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.4);
+}
+
+.menu-item {
+    border: 1px solid black;
+    display: flex;
+    flex-direction: column;
+}
+
+.food-image {
+    height: 300px;
+    width: 300px;
+    flex: 0 0 auto;
+}
+
+.food-name {
+    background-color: var(--boldRed);
+    color: white;
+    text-align: center;
+    font-size: 1.3rem;
+    font-weight: bold;
+    flex: 1 1 auto;
 }
